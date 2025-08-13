@@ -1,27 +1,60 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <title>My Resume</title>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Abhik Das – Resume</title>
   <style>
     body {
       font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
       background-color: #f4f4f4;
       display: flex;
-      justify-content: center;
+      flex-direction: column;
       align-items: center;
-      height: 100vh;
+    }
+    header {
+      background: #222;
+      color: white;
+      padding: 1rem;
+      text-align: center;
+      width: 100%;
+    }
+    h1 {
       margin: 0;
+      font-size: 1.5rem;
+    }
+    .btn {
+      margin-top: 10px;
+      display: inline-block;
+      padding: 10px 20px;
+      background: #0077cc;
+      color: white;
+      text-decoration: none;
+      border-radius: 5px;
+      font-size: 1rem;
     }
     iframe {
-      width: 80%;
-      height: 90%;
+      width: 90%;
+      height: 90vh;
       border: none;
+      margin-top: 10px;
+    }
+    @media (max-width: 768px) {
+      iframe {
+        height: 80vh;
+      }
     }
   </style>
 </head>
 <body>
+  <header>
+    <h1>Abhik Das – Resume</h1>
+    <a href="Resume_Abhik_Das.pdf" class="btn" download>Download Resume</a>
+  </header>
+
+  <!-- Embed your PDF -->
   <iframe src="Resume_Abhik_Das.pdf"></iframe>
 </body>
 </html>
-
