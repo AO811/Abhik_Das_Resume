@@ -6,40 +6,49 @@
   <title>Abhik Das – Resume</title>
   <style>
     body {
-      font-family: Arial, sans-serif;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
       margin: 0;
       padding: 0;
-      background-color: #f4f4f4;
+      background-color: #121212;
+      color: #ffffff;
       display: flex;
       flex-direction: column;
       align-items: center;
     }
     header {
-      background: #222;
-      color: white;
+      background: #1f1f1f;
       padding: 1rem;
       text-align: center;
       width: 100%;
+      box-shadow: 0 2px 10px rgba(0,0,0,0.5);
     }
     h1 {
       margin: 0;
-      font-size: 1.5rem;
+      font-size: 1.6rem;
+      font-weight: 500;
     }
     .btn {
       margin-top: 10px;
       display: inline-block;
       padding: 10px 20px;
-      background: #0077cc;
+      background: linear-gradient(135deg, #00c6ff, #0072ff);
       color: white;
       text-decoration: none;
-      border-radius: 5px;
+      border-radius: 8px;
       font-size: 1rem;
+      font-weight: bold;
+      transition: 0.3s;
+    }
+    .btn:hover {
+      opacity: 0.85;
+      transform: translateY(-2px);
     }
     iframe {
       width: 90%;
       height: 90vh;
       border: none;
       margin-top: 10px;
+      box-shadow: 0 0 15px rgba(0,0,0,0.5);
     }
     @media (max-width: 768px) {
       iframe {
@@ -51,10 +60,10 @@
 <body>
   <header>
     <h1>Abhik Das – Resume</h1>
-    <a href="Resume_Abhik_Das.pdf" class="btn" download>Download Resume</a>
+    <a href="Resume_Abhik_Das.pdf" class="btn" download>⬇ Download Resume</a>
   </header>
 
-  <!-- Embed your PDF -->
+  <!-- Embed PDF -->
   <iframe src="Resume_Abhik_Das.pdf"></iframe>
 </body>
 </html>
